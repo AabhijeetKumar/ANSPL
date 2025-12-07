@@ -1,0 +1,7 @@
+
+
+/* smooth horizontal scrolling for mobile */
+::-webkit-scrollbar {
+  display: none;
+}
+
