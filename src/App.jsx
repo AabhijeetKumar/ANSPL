@@ -16,6 +16,7 @@ import Products from "./Final/Components/Products/Products";
 import CallUs from "./Final/Components/CallUs";
 import ScrollToTop from "./ScrollToTop";
 import Contact from "./Final/Components/Contact";
+import GalleryCmp from "./Final/Components/GalleryCmp";
 //import Testimonials from "./Final/Components/Testimoils/Testimonials";
 
 
@@ -49,7 +50,7 @@ function App() {
               <CallUs />
               <Contact />
               {/* <Testimonials /> */}
-              
+              <GalleryCmp />
               <Footer />
             
             </>
