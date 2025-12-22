@@ -42,7 +42,7 @@ export default function ContactPg() {
                 src="https://docs.google.com/forms/d/e/1FAIpQLSesjTvuVZdOfJApixpqOYCHirTYmO0F7VkvAGBRY-HIBm5htw/viewform?embedded=true"
                 width="100%"
                 frameborder="0"
-                className="h-150 md:h-180"
+                className="h-150 "
               >
                 Loading…
               </iframe>

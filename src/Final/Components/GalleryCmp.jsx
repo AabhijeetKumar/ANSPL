@@ -32,7 +32,7 @@ const images = [
 export default function GalleryCmp() {
   const navigate = useNavigate();
   return (
-    <div className="px-5 py-10 pb-30 md:px-25 ">
+    <div className="px-5 pt-30 md:px-25 ">
 
       {/* ========== Animated Page Title ========== */}
       <motion.h1
