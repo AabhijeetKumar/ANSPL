@@ -1,87 +1,36 @@
 
-import Masonry from "react-masonry-css";
 import { motion } from "framer-motion";
+import { FiArrowRight } from "react-icons/fi";
+import { useNavigate } from "react-router-dom";
 
 //Images----------------------------------------------------->
 import BA0 from "../Images/VerticalsImg/BuildingAutomation0.jpg"
 import BA1 from"../Images/VerticalsImg/BuildingAutomation1.jpg"
 import BA2 from"../Images/VerticalsImg/BuildingAutomation2.jpg"
-import CP1 from "../Images/VerticalsImg/CoilProcessingLines1.webp"
 import CP2 from "../Images/VerticalsImg/CoilProcessingLines2.jpg"
 import CP3 from "../Images/VerticalsImg/CoilProcessingLines3.jpg"
 import CS0 from "../Images/VerticalsImg/ColdStorageAutomation0.jpg"
 import CS1 from "../Images/VerticalsImg/ColdStorageAutomation1.jpg"
 import FCCM0 from "../Images/VerticalsImg/FurnacesCCM0.webp"
-import FCCM1 from "../Images/VerticalsImg/FurnacesCCM1.jpg"
-import PP0 from "../Images/VerticalsImg/PulpPaper0.jpeg"
 import PP1 from "../Images/VerticalsImg/PulpPaper1.webp"
-import PP2 from "../Images/VerticalsImg/PulpPaper2.jpg"
-import SS0 from "../Images/VerticalsImg/SoftwareSCADA0.jpg"
-import SS1 from "../Images/VerticalsImg/SoftwareSCADA1.jpg"
-import TMT0 from "../Images/VerticalsImg/TMTRollingMills0.png"
-import TMT1 from "../Images/VerticalsImg/TMTRollingMills1.webp"
-import TMT2 from "../Images/VerticalsImg/TMTRollingMills2.jpg"
-import TMT3 from "../Images/VerticalsImg/TMTRollingMills3.jpg"
 import MMS0 from"../Images/VerticalsImg/MMS0.jpg"
-import MMS1 from"../Images/VerticalsImg/MMS1.png"
-import EMS0 from"../Images/VerticalsImg/EMS0.png"
-
-import AC0 from "../Images/ProductsImg/ACDrive0.png"
-import AC1 from "../Images/ProductsImg/ACDrive1.webp"
-import AC2 from "../Images/ProductsImg/ACDrive2.jpg"
-import BS0 from "../Images/ProductsImg/BalluffSiemens0.jpg"
-import BS1 from "../Images/ProductsImg/BalluffSiemens1.jpg"
-import BS2 from "../Images/ProductsImg/BalluffSiemens2.jpg"
-import BS3 from "../Images/ProductsImg/BalluffSiemens3.jpg"
-import LT0 from "../Images/ProductsImg/LTBusduct0.jpg"
-import LT1 from "../Images/ProductsImg/LTBusduct1.jpg"
-import LT2 from "../Images/ProductsImg/LTBusduct2.jpg"
-import IPA0 from "../Images/ProductsImg/IPA0.avif"
-import IPA1 from "../Images/ProductsImg/IPA1.jpg"
-
-import ACB0 from "../Images/ServicesImg/ACB0.jpg"
-import ACB1 from "../Images/ServicesImg/ACB1.png"
-import ACB2 from "../Images/ServicesImg/ACB2.jpg"
-import ACDC0 from "../Images/ServicesImg/ACDC0.avif"
-import Panel0 from "../Images/ServicesImg/Panel0.jpg"
-import SiteErection0 from "../Images/ServicesImg/SiteErection0.jpg"
-import SiteErection1 from "../Images/ServicesImg/SiteErection1.jpg"
-import SiteErection2 from "../Images/ServicesImg/SiteErection2.jpg"
-import VCB0 from "../Images/ServicesImg/VCB0.avif"
-import VCB1 from "../Images/ServicesImg/VCB1.jpg"
-
 import Furnace from "../Images/ProjectConsultingImg/Furnace.jpg"
 import PM0 from "../Images/ProjectConsultingImg/PaperMill0.avif"
-import WDP0 from "../Images/ProjectConsultingImg/WireDrawingPlants0.jpg"
-import WDP1 from "../Images/ProjectConsultingImg/WireDrawingPlants1.jpg"
-import pTMT0 from "../Images/ProjectConsultingImg/TMT0.jpg"
+
 
 
 const images = [
     BA0, BA1, BA2,
-    CP1, CP2, CP3,
+     CP2, CP3,
     CS0, CS1,
-    FCCM0, FCCM1,
-    MMS0, MMS1,
-    PP0, PP1, PP2,
-    SS0, SS1,
-    TMT0, TMT1, TMT2, TMT3,
-
-    AC0, AC1, AC2,
-    BS0, BS1, EMS0, BS2, BS3,
-    LT0, IPA0, IPA1,LT1, LT2,
-
-    ACB0, ACB1, ACB2,
-    ACDC0,
-    Panel0, 
-    SiteErection0, SiteErection1, SiteErection2,
-    VCB0, VCB1,
-
-    Furnace, PM0, WDP0, WDP1, pTMT0
+    FCCM0, PP1,
+    MMS0,
+    Furnace, PM0,
 ]
 
 
 export default function GalleryCmp() {
+  const navigate = useNavigate();
   return (
     <div className="px-5 py-10 pb-30 md:px-25 ">
 
@@ -95,7 +44,7 @@ export default function GalleryCmp() {
         Gallery
       </motion.h1>
 
-      {/* ========== YouTube-Style Fixed Card Grid ========== */}
+      {/* ========== Fixed Card Grid ========== */}
       <div className="grid grid-cols-2  md:grid-cols-3  gap-4">
         {images.map((src, i) => (
           <motion.div
@@ -121,6 +70,36 @@ export default function GalleryCmp() {
           </motion.div>
         ))}
       </div>
+      {/* Gallery Button */}
+              <div className="flex justify-center mt-10">
+                <div className="flex items-center gap-4">
+                  {/* GALLERY TEXT */}
+                  <motion.span
+                    className=" text-xl font-semibold tracking-wide border-b-2 border-yellow-400 pb-1"
+                    whileHover={{ scale: 1.05 }}
+                    transition={{ duration: 0.2 }}
+                  >
+                    Visit Our Gallery
+                  </motion.span>
+      
+                  {/* ARROW BUTTON */}
+                  <motion.button
+                    whileHover={{ scale: 1.15 }}
+                    whileTap={{ scale: 0.9 }}
+                    onClick={() => navigate("/gallery")}
+                    className="
+                      p-3 
+                      rounded-full 
+                      bg-white/30  
+                      shadow-md 
+                      flex items-center justify-center
+                      border border-white/20
+                    "
+                  >
+                    <FiArrowRight className="text-yellow-400 text-xl" />
+                  </motion.button>
+                </div>
+              </div>
     </div>
   );
 }
