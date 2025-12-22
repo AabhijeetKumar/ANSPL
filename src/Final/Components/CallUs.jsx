@@ -7,7 +7,7 @@ export default function CallUs() {
         className="
         flex flex-col justify-center items-center text-center
         bg-yellow-300 text-black
-        py-20 px-6"
+        py-30 px-6"
         initial={{ opacity: 0.1 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1 }}

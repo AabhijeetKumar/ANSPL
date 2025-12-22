@@ -9,6 +9,54 @@ export default function Footer() {
   return (
     <footer className="bg-black text-gray-100 py-8 px-6 md:px-16">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-10 text-left">
+
+
+        {/* ======================= 2️⃣ SITEMAP ======================= */}
+        <div className="relative ">
+          <h3 className="text-white text-xl font-semibold mb-4">Sitemap</h3>
+          <ul className="space-y-2">
+            <li>
+              <a
+                onClick={() => navigate("/")}
+                className="hover:text-white hover:underline underline-offset-4 cursor-pointer"
+              >
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+                onClick={() => navigate("/aboutus")}
+                className="hover:text-white hover:underline underline-offset-4 cursor-pointer"
+              >
+                About Us
+              </a>
+            </li>
+
+            <li>
+              <a
+                onClick={() => navigate("/contactus")}
+                className="hover:text-white hover:underline underline-offset-4 cursor-pointer"
+              >
+                Contact Us
+              </a>
+            </li>
+
+            <li>
+              <a
+                onClick={() => navigate("/gallery")}
+                className="hover:text-white hover:underline underline-offset-4 cursor-pointer"
+              >
+                Gallery
+              </a>
+            </li>
+          </ul>
+
+          {/* Mobile Divider */}
+          <div className="md:hidden w-full h-[1px] bg-white mt-6"></div>
+        </div>
+
+
+        
         {/* ======================= 1️⃣ QUICK LINKS ======================= */}
         <div className="relative">
           <h3 className="text-white text-xl font-semibold mb-4">Quick Links</h3>
@@ -260,49 +308,7 @@ export default function Footer() {
           <div className="md:hidden w-full h-[1px] bg-white mt-6"></div>
         </div>
 
-        {/* ======================= 2️⃣ SITEMAP ======================= */}
-        <div className="relative ">
-          <h3 className="text-white text-xl font-semibold mb-4">Sitemap</h3>
-          <ul className="space-y-2">
-            <li>
-              <a
-                onClick={() => navigate("/")}
-                className="hover:text-white hover:underline underline-offset-4 cursor-pointer"
-              >
-                Home
-              </a>
-            </li>
-            <li>
-              <a
-                onClick={() => navigate("/aboutus")}
-                className="hover:text-white hover:underline underline-offset-4 cursor-pointer"
-              >
-                About Us
-              </a>
-            </li>
-
-            <li>
-              <a
-                onClick={() => navigate("/contactus")}
-                className="hover:text-white hover:underline underline-offset-4 cursor-pointer"
-              >
-                Contact Us
-              </a>
-            </li>
-
-            <li>
-              <a
-                onClick={() => navigate("/gallery")}
-                className="hover:text-white hover:underline underline-offset-4 cursor-pointer"
-              >
-                Gallery
-              </a>
-            </li>
-          </ul>
-
-          {/* Mobile Divider */}
-          <div className="md:hidden w-full h-[1px] bg-white mt-6"></div>
-        </div>
+        
 
         {/* ======================= 3️⃣ CORPORATE OFFICE ======================= */}
         <div className="relative space-y-4">

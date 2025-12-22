@@ -83,14 +83,14 @@ const images = [
 
 export default function GalleryCmp() {
   return (
-    <div className="px-5 md:px-25 py-5">
+    <div className="px-5 py-10 pb-30 md:px-25 ">
 
       {/* ========== Animated Page Title ========== */}
       <motion.h1
         initial={{ opacity: 0, y: -40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
-        className="text-center text-4xl md:text-5xl font-semibold m-10"
+        className="text-center text-4xl md:text-5xl font-semibold mb-10"
       >
         Gallery
       </motion.h1>

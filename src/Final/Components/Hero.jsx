@@ -145,7 +145,7 @@ export default function Hero() {
       {/* SECTION 2 */}
       <div>
       <motion.div
-        className="text-white bg-black/85 flex justify-center flex-col text-center py-30 px-6 lg:px-40"
+        className="text-white bg-black/85 flex justify-center flex-col text-center py-40 px-6 lg:px-40"
         initial={{ opacity: 0.2 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1 }}
