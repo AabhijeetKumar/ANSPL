@@ -640,6 +640,16 @@ export default function Navbar() {
 
             <a
               onClick={() => {
+                navigate("/contactus");
+                setMobileOpen(false);
+              }}
+              className="block text-lg font-semibold"
+            >
+              Contact Us
+            </a>
+
+            <a
+              onClick={() => {
                 navigate("/gallery");
                 setMobileOpen(false);
               }}
@@ -649,15 +659,7 @@ export default function Navbar() {
             </a>
 
 
-            <a
-              onClick={() => {
-                navigate("/contactus");
-                setMobileOpen(false);
-              }}
-              className="block text-lg font-semibold"
-            >
-              Contact Us
-            </a>
+            
           </motion.div>
         )}
       </AnimatePresence>
