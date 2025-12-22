@@ -8,7 +8,7 @@ export default function Contact() {
   const navigate = useNavigate();
 
   return (
-    <div className="w-full flex flex-col md:flex-row items-center justify-between px-5 md:px-50 md:py-40 gap-10">
+    <div className="w-full flex flex-col md:flex-row items-center justify-between px-5 py-20 md:px-50 md:py-60 gap-10">
 
       {/* Left Text */}
       <motion.h1
