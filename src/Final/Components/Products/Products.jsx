@@ -80,7 +80,7 @@ const sliderImageSrc = [
 
 export default function Slider(){
 return (
-    <div className="relative w-full px-4 md:px-8 lg:px-20 py-12 overflow-hidden rounded-xl">
+    <div className="relative w-full px-4 md:px-8 lg:px-20 py-20 overflow-hidden rounded-xl">
 
       {/* 🔹 Diagonal Lines Background */}
 <motion.div
