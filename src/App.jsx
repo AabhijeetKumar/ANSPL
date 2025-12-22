@@ -4,11 +4,12 @@ import {
   Route,
   useNavigate,
 } from "react-router-dom";
+import "./App.css";
+
 
 // COMPONENTS----------------------------->
 import Hero from "./Final/Components/Hero";
 import Footer from "./Final/Components/Footer";
-import "./App.css";
 import Navbar from "./Final/Components/Navbar";
 import WhatsAppButton from "./Final/Components/WhatasppBtn/WhatsAppBtn";
 import Client from "./Final/Components/OurClient/Clients";
