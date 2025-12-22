@@ -49,9 +49,10 @@ function App() {
               <Products />
               <Client />
               <CallUs />
-              <Contact />
+              
               {/* <Testimonials /> */}
               <GalleryCmp />
+              <Contact />
               <Footer />
             
             </>
