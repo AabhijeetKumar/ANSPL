@@ -38,6 +38,8 @@ import LT1 from "../../Images/ProductsImg/LTBusduct1.jpg"
 import LT2 from "../../Images/ProductsImg/LTBusduct2.jpg"
 import IPA0 from "../../Images/ProductsImg/IPA0.avif"
 import IPA1 from "../../Images/ProductsImg/IPA1.jpg"
+import Bolted from "../../Images/ProductsImg/BoltedPanels0.jpg"
+import Bolted1 from "../../Images/ProductsImg/boltedPanel.png"
 
 import ACB0 from "../../Images/ServicesImg/ACB0.jpg"
 import ACB1 from "../../Images/ServicesImg/ACB1.png"
@@ -59,6 +61,7 @@ import pTMT0 from "../../Images/ProjectConsultingImg/TMT0.jpg"
 
 const images = [
     BA0, BA1, BA2,
+    Bolted, Bolted1,
     CP1, CP2, CP3,
     CS0, CS1,
     FCCM0, FCCM1,
