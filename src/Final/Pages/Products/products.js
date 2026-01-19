@@ -58,9 +58,9 @@ export const products = [
   },
   {
     id: "botted-panels",
-    title: "Bott ed Panels (PCC, MCC, Control Desk)",
+    title: "Bolted Panel (PCC, MCC, Control Desk)",
     description:
-      "We design and manufacture high-performance Botted Panels including PCC, MCC, and advanced Control Desk panels. Built using industry-best components, our panels ensure maximum electrical safety, smooth motor control, and trouble-free operation. Each panel is engineered for durability, scalability, and ease of maintenance, making them ideal for large and small industries alike.",
+      "We design and manufacture high-performance Bolted Panels including PCC, MCC, and advanced Control Desk panels. Built using industry-best components, our panels ensure maximum electrical safety, smooth motor control, and trouble-free operation. Each panel is engineered for durability, scalability, and ease of maintenance, making them ideal for large and small industries alike.",
     video: "",
     images: [
       Botted0

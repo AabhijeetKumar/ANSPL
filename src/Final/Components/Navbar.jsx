@@ -173,7 +173,7 @@ export default function Navbar() {
                 onClick={() => navigate("/products/botted-panels")}
                 className="block hover:text-blue-600 cursor-pointer"
               >
-                Bott ed Panels (PCC, MCC, Control Desk)
+                Bolted Panel (PCC, MCC, Control Desk)
               </a>
               <a
                 onClick={() => navigate("/products/lt-busduct")}
@@ -485,7 +485,7 @@ export default function Navbar() {
                       }}
                       className="block"
                     >
-                      Bott ed Panels (PCC, MCC, Control Desk)
+                      Bolted Panel (PCC, MCC, Control Desk)
                     </a>
                     <a
                       onClick={() => {
