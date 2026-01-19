@@ -10,7 +10,8 @@ import BS3 from "../../Images/ProductsImg/BalluffSiemens3.jpg"
 import LT0 from "../../Images/ProductsImg/LTBusduct0.jpg"
 import LT1 from "../../Images/ProductsImg/LTBusduct1.jpg"
 import LT2 from "../../Images/ProductsImg/LTBusduct2.jpg"
-import Botted0 from "../../Images/ProductsImg/BottedPanels0.jpg"
+import Bolted0 from "../../Images/ProductsImg/BoltedPanels0.jpg"
+import Bolted1 from "../../Images/ProductsImg/BoltedPanel.png"
 import IPA0 from "../../Images/ProductsImg/IPA0.avif"
 import IPA1 from "../../Images/ProductsImg/IPA1.jpg"
 
@@ -57,13 +58,13 @@ export const products = [
     ],
   },
   {
-    id: "botted-panels",
+    id: "bolted-panel",
     title: "Bolted Panel (PCC, MCC, Control Desk)",
     description:
       "We design and manufacture high-performance Bolted Panels including PCC, MCC, and advanced Control Desk panels. Built using industry-best components, our panels ensure maximum electrical safety, smooth motor control, and trouble-free operation. Each panel is engineered for durability, scalability, and ease of maintenance, making them ideal for large and small industries alike.",
     video: "",
     images: [
-      Botted0
+      Bolted0, Bolted1
     ],
   },
   {
