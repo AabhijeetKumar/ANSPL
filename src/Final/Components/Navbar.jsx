@@ -83,9 +83,14 @@ export default function Navbar() {
         
         
         {/*<-------------------------- Desktop Menu ------------------------->*/}
-        <div className="hidden lg:flex space-x-10 text-lg font-medium">
+        <div className="hidden lg:flex space-x-6 text-lg font-medium">
 
+          <div className="relative group">
+            <button className="flex items-center gap-1 hover:text-blue-600 ">
+              <a onClick={() => navigate("/")} className=" cursor-pointer"> Home</a>
+            </button>
 
+          </div>
 
 
           {/* Vertical Solutions */}
