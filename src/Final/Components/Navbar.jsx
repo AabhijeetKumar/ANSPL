@@ -175,7 +175,7 @@ export default function Navbar() {
                 IPA Weighing Solutions
               </a>
               <a
-                onClick={() => navigate("/products/botted-panels")}
+                onClick={() => navigate("/products/bolted-panel")}
                 className="block hover:text-blue-600 cursor-pointer"
               >
                 Bolted Panel (PCC, MCC, Control Desk)
@@ -485,7 +485,7 @@ export default function Navbar() {
                     </a>
                     <a
                       onClick={() => {
-                        navigate("/products/botted-panels");
+                        navigate("/products/bolted-panel");
                         setMobileOpen(false);
                       }}
                       className="block"
